@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', 
+  sans-serif;
+}
+
+:root {
+  --dark: #000e0d;
+  --light: #fafafa;
+
+  /* --primary: #00bf76; */
+
+  --primary: #007347;
+  --secondary: #00fa9a;
+
+  /* --primary: #0abac2; */
+  /* --light-green: #b2de94; */
+  
+  --light-green: #71ffc8;
+
+  --contrast: #ff6f61;
+}
+
+html {
+  scroll-behavior: smooth;
+}

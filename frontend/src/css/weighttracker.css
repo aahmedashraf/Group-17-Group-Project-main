@@ -1,0 +1,131 @@
+:root {
+  height: 100%;
+}
+
+.MainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  min-height: 99vh;
+  align-items: center;
+  background:url(../../public/assets/images/latestbg.png) no-repeat;
+
+  /* background: linear-gradient(225deg,#0abac2,#b2de94); */
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+}
+.MainText  {
+  color: rgb(0, 0, 0);
+  font-size: 5rem;
+  line-height: 1.2;
+margin-bottom: 2rem;
+}
+
+.ContentContainer {
+  z-index: 3;
+    max-width: 1800px;
+    position: absolute;
+    padding: 8px 24px;
+
+    /* height: 88vh; */
+	width: 100%;
+	position: relative;
+	display: grid;
+	grid-template-columns: 1.25fr 1fr;
+	align-items: center;
+	gap: 2rem;
+}
+
+.TextContainer {
+  display: flex;
+  flex-direction: column;
+  flex:1 1 40rem;
+}
+.SubHeader {
+  margin-top: 24px;
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  line-height: 48px;
+  margin-bottom: 2.3rem;
+  font-weight: 500;
+}
+
+.SubText {
+  margin-top: 24px;
+  color: darkgrey;
+  font-size: 1.1.rem;
+  line-height: 32px;
+  margin-bottom: 2.3rem;
+  font-weight: 500;
+}
+.WeighttrackerbtnWrapper {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+}
+/* CSS for button */
+.WeighttrackerbtnWrapper input {
+  border-radius: 4px;
+	background: none;
+	white-space: nowrap;
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #d3d2d2;
+    color: black;
+	outline: none;
+	border: 2px solid #fff;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+
+.WeighttrackerbtnWrapper input:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.WeighttrackerbtnWrapper input:hover:before {
+  height: 500%;
+}
+
+.WeighttrackerbtnWrapper input:hover {
+  background: linear-gradient(225deg,#b0c20a,#368302);
+  transition: 0.5s ease-in-out;
+  color: black;
+}
+
+
+.inputboxtext {
+  width: 100%;
+  margin-top: 48px;
+  top: 2px;
+  left: 2px;
+  color: rgb(0, 0, 0);
+}
+
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.SubHeader span {
+  color:rgb(3, 255, 45);
+}
+
+
